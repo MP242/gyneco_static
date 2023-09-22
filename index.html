@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FE7096; /* pour un arrière-plan clair */
+      }
+      
+      img[src="./iPhone 14 - 1.png"] {
+        display: none;
+      }
+
+      /* Media query pour les écrans mobiles */
+      @media screen and (max-width: 768px) {
+        img[src="./screen.jpeg"] {
+          display: none; /* Cacher l'image de bureau */
+        }
+
+        img[src="./iPhone 14 - 1.png"] {
+          display: block; /* Afficher l'image mobile */
+        }
+      }
+    </style>
+  </head>
+  <body style="padding: 0; margin: 0">
+    <img style="max-width: 1480px" src="./screen.jpeg" />
+    <img style="width: 100%" src="./iPhone 14 - 1.png" />
+  </body>
+</html>
