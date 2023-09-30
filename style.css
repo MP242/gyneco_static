@@ -36,6 +36,9 @@ h1 {
 }
 
 h2 {
+  font-size: 64px;
+  margin-top: 50px;
+  margin-bottom: 0;
   font-family: OrelegaOne, sans-serif;
 }
 h3 {
@@ -238,7 +241,7 @@ p {
   flex-direction: column;
 }
 
-.teamSection h1 {
+.teamSection h2 {
   text-align: center;
   width: 80%;
 }
@@ -321,7 +324,7 @@ p {
   margin: auto;
 }
 
-.questionSection h1 {
+.questionSection h2 {
   margin-bottom: 50px;
 }
 
@@ -359,7 +362,7 @@ p {
   margin: auto;
 }
 
-.connectedSection h1 {
+.connectedSection h2 {
   margin-bottom: 50px;
 }
 
