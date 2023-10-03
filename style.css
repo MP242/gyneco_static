@@ -1,21 +1,25 @@
 @font-face {
   font-family: OrelegaOne;
   src: url("/fonts/OrelegaOne/OrelegaOne-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: OrelegaOneBold;
   src: url("/fonts/OrelegaOne/OrelegaOne-Bold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: SpaceGroteskBold;
   font-weight: bold;
   src: url("/fonts/spacegrotesk/SpaceGrotesk-Bold.otf");
+  font-display: swap;
 }
 @font-face {
   font-family: SpaceGroteskRegular;
   font-weight: 100;
   src: url("/fonts/spacegrotesk/SpaceGrotesk-Regular.otf");
+  font-display: swap;
 }
 
 html,
