@@ -1,37 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #FBAFBD; /* pour un arrière-plan clair */
-      }
-      
-      img[src="./iPhone 14V2.png"] {
-        display: none;
-      }
-
-      /* Media query pour les écrans mobiles */
-      @media screen and (max-width: 768px) {
-        img[src="./screenV2.jpeg"] {
-          display: none; /* Cacher l'image de bureau */
-        }
-
-        img[src="./iPhone 14V2.png"] {
-          display: block; /* Afficher l'image mobile */
-        }
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Artemis - Centre Médical de la Femme - Services Gynécologiques
+    </title>
+    <meta
+      name="description"
+      content="Artemis est un centre médical spécialisé dans la santé des femmes. Offre des services gynécologiques modernes et un accompagnement complet."
+    >
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" async></script>
   </head>
-  <body style="padding: 0; margin: 0">
-    <img style="max-width: 1480px; width: 100%;" src="./screenV2.jpeg" />
-    <img style="width: 100%" src="./iPhone 14V2.png" />
+  <body>
+    <div class="welcome">
+      <div class="leftContainer">
+        <p>logo</p>
+        <h1>Centre médical de la Femme</h1>
+        <div class="btnContainer">
+          <button class="btn purple" onclick="goToSection()">
+            Nos services
+          </button>
+          <button class="btn black" onclick="kelDoc()">
+            Prendre rendez-vous
+          </button>
+        </div>
+      </div>
+      <div class="rightContainer">
+        <img
+          id="ellipse"
+          src="./assets/Ellipse.svg"
+          alt="design élégant pour la gynécologie et la maternité"
+        >
+        <div class="cerveauContainer">
+          <img
+            src="./assets/images2.jpg"
+            alt="Echographie de bébé réalisé par le cabinet Artemis - centre de gynécologie"
+          >
+          <div class="shape1"></div>
+        </div>
+        <div class="babyEchoContainer">
+          <img
+            id="babyEcho"
+            src="./assets/babyEcho.avif"
+            alt="Echographie de bébé réalisé par le cabinet Artemis - centre de gynécologie"
+          >
+          <img
+            id="svgStar"
+            src="./assets/etoile.svg"
+            alt="Étoile symbolisant l'excellence en gynécologie"
+          >
+        </div>
+      </div>
+    </div>
+    <section class="nosServices" id="nosServicesSection">
+      <div class="servicesContainer flex-wrap">
+        <img
+          id="sectionServiceEcho"
+          src="./assets/echo.jpg"
+          alt="Échographie de grossesse réalisée chez Artemis à St Gilles les Bains à la Réunion"
+        >
+        <div class="servicesText">
+          <h2>Cabinet de pointes pour la santé des femmes</h2>
+          <p>
+            Notre établissement moderne propose un accompagnement complet dans
+            un environnement réconfortant.
+          </p>
+        </div>
+      </div>
+      <div class="servicesContainer reverse-wrap">
+        <div class="servicesText">
+          <h2>Cabinet de pointes pour la santé des femmes</h2>
+          <p>
+            Notre établissement moderne propose un accompagnement complet dans
+            un environnement réconfortant.
+          </p>
+        </div>
+        <div class="imageContainer">
+          <img
+            id="svgRedStar"
+            src="./assets/etoileRed.svg"
+            alt="Design pour promouvoir le bébé, la maternité et le service gynécologique du cabinet médical Artemis à St Gilles les Bains situé la Réunion"
+          >
+          <img
+            id="sectionServiceFemme"
+            src="./assets/femme.png"
+            alt="Femme enceinte durant une consultation de suivie de grossesse au cabinet médical Artemis situé à St Gilles les Bains à la Réunion"
+          >
+        </div>
+      </div>
+    </section>
+    <section class="teamSection">
+      <h2>Rencontrez notre équipe</h2>
+      <p>Notre équipe de gynécologues hautement qualifiés et expérimentés.</p>
+      <div class="teamContainer">
+        <div class="docCard" id="doc1">
+          <img
+            src="./assets/femme.png"
+            alt="Photographie du docteur Eugénie GAMBIER - gynécologue au cabinet médical Artemis situé à St Gilles les Bains à la Réunion"
+          >
+          <h3>DR. EUGENIE GAMBIER</h3>
+          <p>
+            Medecine généraliste<br>
+            DU de gynécologie
+          </p>
+        </div>
+        <div class="docCard" id="doc2">
+          <img
+            src="./assets/femme.png"
+            alt="Photographie du docteur Eugénie GAMBIER - gynécologue au cabinet médical Artemis situé à St Gilles les Bains à la Réunion"
+          >
+          <h3>DR. EUGENIE GAMBIER</h3>
+          <p>
+            Medecine généraliste<br>
+            DU de gynécologie
+          </p>
+        </div>
+        <div class="docCard" id="doc3">
+          <img
+            src="./assets/femme.png"
+            alt="Photographie du docteur Eugénie GAMBIER - gynécologue au cabinet médical Artemis situé à St Gilles les Bains à la Réunion"
+          >
+          <h3>DR. EUGENIE GAMBIER</h3>
+          <p>
+            Medecine généraliste<br>
+            DU de gynécologie
+          </p>
+        </div>
+        <div class="docCard" id="doc4">
+          <img
+            src="./assets/femme.png"
+            alt="Photographie du docteur Eugénie GAMBIER - gynécologue au cabinet médical Artemis situé à St Gilles les Bains à la Réunion"
+          >
+          <h3>DR. EUGENIE GAMBIER</h3>
+          <p>
+            Medecine généraliste<br>
+            DU de gynécologie
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="questionSection">
+      <h2>Questions Fréquentes</h2>
+      <div class="questionContainer">
+        <div class="question">
+          <h3>Quels services votre cabinet propose-t-il ?</h3>
+          <p>
+            Nous proposons des services allant des contrôles de routine à des
+            traitements plus spécialisés, y compris les soins maternels, la
+            contraception et la prise en charge de la ménopause.
+          </p>
+        </div>
+        <div class="question">
+          <h3>Comment prendre rendez-vous ?</h3>
+          <p>
+            Appelez notre cabinet ou passer par le service "……" de prise de
+            rendez-vous en ligne.
+          </p>
+        </div>
+      </div>
+      <div class="questionContainer">
+        <div class="question">
+          <h3>Prenez-vous la mutuelle ?</h3>
+          <p>
+            Oui, nous collaborons avec diverses mutuelles. Veuillez contacter
+            notre cabinet pour confirmer votre prise en charge.
+          </p>
+        </div>
+        <div class="question">
+          <h3>Are your services available in English?</h3>
+          <p>
+            Yes, our team can accommodate patients in both French and English.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="connectedSection">
+      <h2>Restez informé !</h2>
+      <p>
+        Rejoignez notre newsletter pour recevoir des mises à jour exclusives sur
+        la santé des femmes, les actualités du cabinet et des offres
+        promotionnelles. <br>Ne manquez pas cela !
+      </p>
+      <div class="newsletterInput">
+        <input type="text">
+        <button>S'abonner</button>
+      </div>
+    </section>
+    <footer>
+      <div class="icone">
+        <img
+          src="./assets/facebook.svg"
+          alt="Lien vers le facebook cabinet médical Artemis situé à St Gilles les Bains à la Réunion"
+        >
+        <img
+          src="./assets/twitter.svg"
+          alt="Lien vers le twitter cabinet médical Artemis situé à St Gilles les Bains à la Réunion"
+        >
+        <img
+          src="./assets/linkedin.svg"
+          alt="Lien vers le linkedin cabinet médical Artemis situé à St Gilles les Bains à la Réunion"
+        >
+      </div>
+      <p>© 2023 Cabinet de gynécologie. Tous droits réservés.</p>
+    </footer>
   </body>
 </html>
