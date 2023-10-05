@@ -99,7 +99,6 @@ p {
 
 #ellipse {
   position: absolute;
-  z-index: -1;
   height: 400px;
   left: -70px;
   top: 0;
@@ -440,6 +439,7 @@ footer .icone {
     margin-top: 50px;
     margin-bottom: 50px;
     height: 250px;
+    z-index: 1;
   }
 
   #ellipse {
@@ -457,6 +457,7 @@ footer .icone {
 
   .babyEchoContainer {
     height: 250px;
+    z-index: 1;
   }
 
   #svgStar {
@@ -464,6 +465,9 @@ footer .icone {
     bottom: -50px;
   }
   h1 {
+    font-size: 48px;
+  }
+  h2 {
     font-size: 48px;
   }
 }
@@ -482,6 +486,10 @@ footer .icone {
   }
 
   h1 {
+    text-align: center;
+  }
+
+  h2 {
     text-align: center;
   }
 
